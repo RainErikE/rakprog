@@ -1,6 +1,7 @@
 import useUpdatingClock from 'hooks/useUpdatingClock'
 
 import Counter from "./Counter"
+import List from "./List"
 
 function MyButton() {
   return <button style={{color: "red"}}>I'm a button</button>
@@ -18,7 +19,7 @@ export default function App() {
         <div>By The Qodesmith</div>
       </header>
 
-      <section className="flex-grow-1 bg-black-80 fw4 white-80 tc pt24">
+      <section className="flex-grow-1 fw4 black-80 tc pt24">
 
         <div className="pa16 f-1-5em">
           {hour}:{minutes}:{seconds}
@@ -28,6 +29,7 @@ export default function App() {
           <MyButton />
         </div>
         <div><Counter /></div>
+        <div><List /></div>
       </section>
     </div>
   )
